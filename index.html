@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claudia's Portofolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <div class="about-wrapper">
+    <div class="about-text">
+      <h1>Hello, I'm <span>Claudia Sinaga!</span></h1>
+      <p class="subtitle">Anda Butuh Karyawan, Saya Butuh Pekerjaan</p>
+      <br>
+      <div class="about-info">
+        <p><i class="fa fa-graduation-cap"></i> S1 Manajemen Rekayasa</p>
+        <p><i class="fa fa-location-dot"></i> Tarutung, Sumatera Utara</p>
+      </div>
+    </div>
+
+    <div class="about-img">
+      <img src="assets/img/klod.png" alt="Profile">
+    </div>
+  </div>
+</section>
+
+<section id="experiences">
+  <h2 class="section-title">Experiences</h2>
+
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-card">
+        <h3>Kuli Aduk Semen</h3>
+        <span>2021 - 2022</span>
+        <p><br>Melakukan pekerjaan stimuluasi otot yang repetitif</p>
+        <button class="exp-btn" onclick="openExpModal('Test Test Test Test Test','Keterangan')">
+            See License
+        </button>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-card">
+        <h3>Chef (Indenpendent Woman)</h3>
+        <span>2018 - present</span>
+        <p><br>Mengolah bahan makanan lokal sampai internasional</p>
+        <button class="exp-btn" onclick="openExpModal('Test Test Test Test Test','Keterangan')">
+            See License
+        </button>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-card">
+        <h3>Pengacara</h3>
+        <span>2024 - present</span>
+        <p><br>Audiens independen yang aktif dengan organisasi IAD</p>
+        <button class="exp-btn" onclick="openExpModal('Test Test Test Test Test','Keterangan')">
+            See License
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="assets/img/inv1.jpg">
+      <div class="project-content">
+        <h3>Invoice System</h3>
+        <p>Laravel Livewire, DOM PDF, SQL</p>
+        <button>View Detail</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/img/mc2.png">
+      <div class="project-content">
+        <h3>Clinic</h3>
+        <p>React, ChartJS</p>
+        <button>View Detail</button>
+      </div>
+    </div>
+    
+    <div class="project-card">
+        <img src="assets/img/o1.png">
+        <div class="project-content">
+            <h3>Airport Queue</h3>
+            <p>Linked List, Terminal</p>
+            <button>View Detail</button>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <img src="assets/img/s1.png">
+        <div class="project-content">
+            <h3>Sarpras Del</h3>
+            <p>PHP, CSS, JS, Bootstrap</p>
+            <button>View Detail</button>
+        </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/img/toko-2.png">
+      <div class="project-content">
+        <h3>TOKO</h3>
+        <p>ReactJS, CSS, Bootstrap 5</p>
+        <button>View Detail</button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="certificates">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="certificate-carousel">
+
+    <div class="cert-card">
+      <img src="assets/img/c-1.png">
+      <div class="cert-info">
+        <h3>Software Engineer Certification</h3>
+        <p>Issued by HackerRank</p>
+        <span>2023</span>
+        <button href="#" class="exp-btn"> See Credentials </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div align="center">
+    Ayo kita saling menyentuh (Let's get a touch)
+  </div><br>
+  <div class="contact-buttons">
+  <a href="mailto:darkcesla@mail.com" class="contact-btn">
+    <i class="fa fa-envelope"></i> Email
+  </a>
+
+  <a href="https://github.com/darkcesla" class="contact-btn">
+    WhatsApp
+  </a>
+
+  <a href="https://linkedin.com/in/darkcesla" class="contact-btn">
+    LinkedIn
+  </a>
+</div>
+
+</section>
+
+<div id="expModal" class="modal">
+  <div class="modal-box">
+    <h3 id="expTitle"></h3>
+    <p id="expDesc"></p>
+    <button onclick="closeExpModal()" class="exp-btn"> Tutup </button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 All Rights Reserved | <a href="https://github.com/darkcesla">Claudia Sinaga</a></p>
+</footer>
+
+<script>
+const carousel = document.querySelector('.certificate-carousel');
+
+setInterval(()=>{
+  carousel.scrollBy({left:320, behavior:'smooth'});
+  if(carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth){
+    carousel.scrollTo({left:0, behavior:'smooth'});
+  }
+},3000);
+
+function openExpModal(title,desc){
+  document.getElementById('expModal').style.display='flex';
+  document.getElementById('expTitle').innerText=title;
+  document.getElementById('expDesc').innerText=desc;
+}
+
+function closeExpModal(){
+  document.getElementById('expModal').style.display='none';
+}
+
+</script>
+</body>
+</html>
